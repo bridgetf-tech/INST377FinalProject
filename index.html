@@ -1,35 +1,73 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthcare API</title>
-</head>
-<body>
-    <div>
-        <header><h1>Healthcare Facilities</h1></header>
-        <div>
-          <div>
-            <h3>New York City</h3>
-            <ol>
-              <li>Bellevue Hospital Center</li>
-              <li>BronxCare Hospital Center</li>
-              <li>Brookdale Hospital Medical Center</li>
-              <li>Brooklyn Hospital Center - Downtown Campus</li>
-              <li>Calvary Hospital</li>
-              <li>David H. Koch Center For Cancer Care</li>
-              <li>Elmhurst Hospital Center</li>
-              <li>Flushing Hospital Medical Center</li>
-              <li> Harlem Hospital Center</li>
-              <li>Henry J. Carter Specialty Hospital</li>
-            </ol>
-          </div>
-          <div><h3>Images</h3></div>
-          <div><img src="new york.jpeg" alt="Bellevue Hospital Center"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>State Health IT Privacy and Consent Laws and Policies</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>State Health IT Privacy and Consent Laws and Policies</h1>
+      </header>
+      <div class="carousel">
+                        
+        <button class="prev">prev</button>
+        <div class="slides"> 
+            <div class="carousel_item visible"><img id=slide_1 src="state1.png" alt="State HIE Consent Policies" /></div>
+            <div class="carousel_item hidden"><img id=slide_2 src="state2.png" alt="State-Sponsored HIE Consent Policies" /></div>
+            <div class="carousel_item hidden"><img id=slide_3 src="state3.png" alt="Require Authorization to Disclose Policies" /></div>
+            <div class="carousel_item hidden"><img id=slide_4 src="state4.png" alt="Minimum Necessary Standard Policies" /></div>
         </div>
-        <div>These are different pictures of the hospitals in New York City.</div>
+        <button class="next">next</button>
+        
+    </div>
+    <div class="box">
+        <!-- description box -->
+        Welcome!  This website provides state laws and policies that regulate patient consent for sharing their personal health information, specifically related to mental health. The information provided covers state-level policies and laws related to Health Information Exchange (HIE) consent, authorization requirements for the disclosure of mental health information for treatment, payment, and healthcare operations (TPO), and minimum necessary standards for the disclosure of mental health information. The website also provides the laws and policies for the District of Columbia. 
+    </div>
+      <!-- wrapper -->
+      <div class="container">
+        <!-- container -->
+        <div class="left_section ">
+            <!-- left inputs -->
+            <h3>Search Bar</h3>
+            <!-- Lab 6 --> 
+            <form class="box main_form">
+                <button type="button" id="data_load">Load State Data</button>
+            <div>
+                <label for="resto">State Name</label>
+                <input type="text" id="resto" state="resto" details_of_consent_policy = "resto">    
+            </div>
+            <div class="buttons">
+              <button type="button" id="filter">Filter State Data</button>
+              <button type="button" id="generate">View Data</button>
+            </div>
+          </form>
+        </div>
+        
+        <div class="right_section box">
+            <!-- right side --> 
+            <!-- images box --> 
+          <h3>State Data</h3>
+          <ol class="box" id="law_list">
+            <!-- description box --> 
+            
+Once you click on the "Load State Data" button and then the "View Data" button, the Individual Health IT Privacy and Consent Laws and Policies for each state and the District of Columbia will be generated here. You can use the search bar to filter data particular to a state by typing in the state name.
+          </ol> 
+            <div class="lds-ellipsis" id="data_load_animation">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+        
       </div>
+    </div>
+    <div class="footer box">
         <footer>bridgetf-tech <a href="http://github.com/bridgetf-tech/" target="_blank" rel="noopener noreferrer">bridgetf-tech</a></footer>
-</body>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
-Healthcare API
