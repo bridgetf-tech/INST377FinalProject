@@ -3,13 +3,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>State Health IT Privacy and Consent Laws and Policies</title>
+    <title>Individual Health IT Privacy and Consent Laws and Policies</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script> 
+
   </head>
   <body>
     <div class="wrapper">
         <header class="header">
-            <h1>State Health IT Privacy and Consent Laws and Policies</h1>
+            <h1>Individual State Health IT Privacy and Consent Laws and Policies</h1>
       </header>
       <div class="carousel">
                         
@@ -21,19 +31,18 @@
             <div class="carousel_item hidden"><img id=slide_4 src="state4.png" alt="Minimum Necessary Standard Policies" /></div>
         </div>
         <button class="next">next</button>
-        
+
     </div>
     <div class="box">
-        <!-- description box -->
         Welcome!  This website provides state laws and policies that regulate patient consent for sharing their personal health information, specifically related to mental health. The information provided covers state-level policies and laws related to Health Information Exchange (HIE) consent, authorization requirements for the disclosure of mental health information for treatment, payment, and healthcare operations (TPO), and minimum necessary standards for the disclosure of mental health information. The website also provides the laws and policies for the District of Columbia. 
     </div>
-      <!-- wrapper -->
+
+    <div id="map"></div>
       <div class="container">
-        <!-- container -->
         <div class="left_section ">
-            <!-- left inputs -->
+  
             <h3>Search Bar</h3>
-            <!-- Lab 6 --> 
+         
             <form class="box main_form">
                 <button type="button" id="data_load">Load State Data</button>
             <div>
@@ -66,7 +75,7 @@ Once you click on the "Load State Data" button and then the "View Data" button, 
       </div>
     </div>
     <div class="footer box">
-        <footer>bridgetf-tech <a href="http://github.com/bridgetf-tech/" target="_blank" rel="noopener noreferrer">bridgetf-tech</a></footer>
+        <footer>My GitHub account is bridgetf-tech <a href="http://github.com/bridgetf-tech/" target="_blank" rel="noopener noreferrer">bridgetf-tech</a></footer>
     </div>
     <script src="script.js"></script>
   </body>
